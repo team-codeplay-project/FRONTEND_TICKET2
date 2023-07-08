@@ -1,15 +1,16 @@
 import React from "react";
 
-const Card2 = ({ events }) => {
+const Card2 = ({events}) => {
   return (
-    <div className="inline-flex flex-col space-y-6 items-start justify-start w-96 py-8 pl-6 bg-gray-900 rounded-3xl">
+    <div className="inline-flex flex-col space-y-6 items-start justify-start w-96 py-8 pl-6 rounded-3xl">
       <div className="inline-flex items-center justify-start w-80 h-8 pr-64">
         <p className="text-2xl font-bold leading-loose text-white">Popular</p>
       </div>
       {events.map((event, index) => (
         <div
           className="inline-flex space-x-10 items-start justify-start w-80"
-          key={index}>
+          key={index}
+        >
           <div className="w-32 h-full rounded-lg">
             {event.image ? (
               <img

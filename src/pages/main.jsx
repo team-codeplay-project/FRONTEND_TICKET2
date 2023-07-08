@@ -1,9 +1,9 @@
 import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import {FaMapMarkerAlt} from "react-icons/fa";
 import "../App.css";
-import { useState } from "react";
+import {useState} from "react";
 
-const MainPage = ({ account }) => {
+const MainPage = ({account}) => {
   const cardTitle = "Upcoming Events";
   const events = [
     {
@@ -51,7 +51,8 @@ const MainPage = ({ account }) => {
       <div className="container mx-auto mt-6 ">
         <div
           className="overflow-y-auto"
-          style={{ maxHeight: "calc(100vh - 140px)" }}>
+          style={{maxHeight: "calc(100vh - 140px)"}}
+        >
           <div className="inline-flex flex-col space-y-1 items-start justify-end w-full h-10 px-6 pt-4 pb-2 bg-black">
             <div className="inline-flex space-x-3 items-center justify-start">
               <p className="text-lg font-bold leading-none text-white">
@@ -68,13 +69,15 @@ const MainPage = ({ account }) => {
           </div>
           <div
             className="overflow-x-auto pb-4 pl-6 pr-3"
-            style={{ maxWidth: "100vw" }}>
-            <div className="flex" style={{ width: "max-content" }}>
+            style={{maxWidth: "100vw"}}
+          >
+            <div className="flex" style={{width: "max-content"}}>
               {events.map((event, index) => (
                 <div className="mr-3" key={index}>
                   <div
                     className="relative shadow"
-                    style={{ width: "320px", height: "240px" }}>
+                    style={{width: "320px", height: "240px"}}
+                  >
                     <div className="w-full h-64 rounded-2xl bg-gray-400">
                       <div className="flex-1 h-full bg-gradient-to-g from-gray to-gray rounded-2xl"></div>
                     </div>
@@ -93,7 +96,8 @@ const MainPage = ({ account }) => {
           {events.map((event, index) => (
             <div
               className="inline-flex space-x-4 items-start justify-start w-full"
-              key={index}>
+              key={index}
+            >
               <div className="w-28 h-full rounded-lg mr-18">
                 {event.image ? (
                   <img
@@ -120,7 +124,8 @@ const MainPage = ({ account }) => {
                     backgroundColor:
                       selectedEvent === event ? "#4C1D95" : "#6366F1",
                   }}
-                  onClick={() => handleTicketClick(event)}>
+                  onClick={() => handleTicketClick(event)}
+                >
                   <p className="text-base font-medium leading-none text-white">
                     See ticket
                   </p>

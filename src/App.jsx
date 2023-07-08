@@ -39,7 +39,7 @@ function App() {
               element={<TicketBookingPage account={account} />}
             />
             <Route path="/mypage" element={<MyPage account={account} />} />
-            <Route path="/event" element={<EventPage account={account} />} />
+            {/* <Route path="/event" element={<EventPage account={account} />} /> */}
             <Route path="/test" element={<Rafflelist account={account} />} />
             <Route path="/test/:r_idx" element={<Raffle account={account} />} />
             <Route
